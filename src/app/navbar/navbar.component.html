@@ -1,0 +1,139 @@
+<div style="float: left;">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+        <p style="text-align: center; font-size: 1.5em; color: white;">INTERN NEXUS</p>
+        <hr style="background-color:white; width: 60%;">
+        <ul style="list-style-type: none;">
+            <li>
+                <a [routerLink]="['/']">
+                    <i class="fa fa-home"></i>
+                    <span class="nav-text">
+                        Dashboard
+                    </span>
+                </a>
+
+            </li>
+            <li class="has-subnav">
+                <a [routerLink]="['/profile']">
+                    <i class="fa fa-laptop "></i>
+                    <span class="nav-text">
+                        User Profile
+                    </span>
+                </a>
+
+            </li>
+            <li class="has-subnav">
+                <a [routerLink]="['/events']">
+                    <i class="fa fa-list"></i>
+                    <span class="nav-text">
+                        Events
+                    </span>
+                </a>
+
+            </li>
+            <li class="has-subnav">
+                <a [routerLink]="['/resume']">
+                    <i class="fa fa-folder-open"></i>
+                    <span class="nav-text">
+                        Resume
+                    </span>
+                </a>
+
+            </li>
+
+            <li>
+                <a [routerLink]="['/forums']">
+                    <i class="fa fa-font"></i>
+                    <span class="nav-text">
+                       Forum
+                    </span>
+                </a>
+            </li>
+            <li class="has-subnav">
+                <a [routerLink]="['/projectlist']">
+                    <i class="fa fa-bars "></i>
+                    <span class="nav-text">
+                        Project List
+                    </span>
+                </a>
+
+            </li>
+            <!-- <li>
+                <a [routerLink]="['/project']">
+                    <i class="fa fa-table"></i>
+                    <span class="nav-text">
+                        Project
+                    </span>
+                </a>
+            </li> -->
+            <li>
+                <a [routerLink]="['/projectenroll']">
+                    <i id="query" class="far fa fa-question-circle "></i>
+                    <span class="nav-text">
+                             Project Enrolled
+                        </span>
+                </a>
+            </li>
+
+            <li>
+                <a [routerLink]="['/suggestion']">
+                    <i class="fa fa-map-marker"></i>
+                    <span class="nav-text">
+                        Suggestion
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a [routerLink]="['/report']">
+                    <i class="fa fa-info"></i>
+                    <span class="nav-text">
+                        Report
+                    </span>
+                </a>
+            </li>
+        </ul>
+
+        <ul style="list-style-type: none;">
+            <li>
+                <a href="#">
+                    <i class="fa fa-power-off "></i>
+                    <span class="nav-text">
+                        Logout
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Use any element to open the sidenav -->
+    <span (click)="openNav()">
+        <div class="icon nav-icon-8">
+                <span></span>
+    <span></span>
+    <span></span>
+</div>
+</span>
+</div>
+
+<!-- ////////////////////////////// TOP BAR /////////////////////////////////////////// -->
+<nav class="navbar navbar-expand-lg navbar-light bg-transparent col-lg-11 offset-lg-2">
+    <a class="navbar-brand offset-lg-0 offset-md-0 offset-sm-1" href="#" style="font-size: 150%; font-weight: bold; font-family: 'Poppins', sans-serif; color: white;">INTERN NEXUS</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span  class="fas fa-bars " style="color: white;"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+        <form class="form-inline my-2 my-lg-0 offset-lg-0 offset-md-0 offset-sm-1">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" style=" border-radius:30px; width: 500px;">
+            <button style="border-radius: 50px;" class="btn btn-outline-dark my-2 my-sm-0 bg-light" type="submit"><i class="fas fa-search"></i></button>
+        </form>
+        <a style="padding-left:2%;" [routerLink]="['/']"><i class=" offset-lg-0 offset-md-0 offset-sm-1 far fa-bell offset-lg-1" style="font-size: 2em;color: white;"></i> </a>
+        <br>
+        <a style="padding-left:4%;" [routerLink]="['/']"><i class=" offset-lg-0 offset-md-0 offset-sm-1 far fa-envelope offset-lg-1" style="font-size: 2em;color: white;"></i> </a>
+
+        <div class="offset-lg-1 offset-lg-0 offset-md-0 offset-sm-1"> <img src="../../assets/images/images.jpg" width="50px;" height="50px;" style="border-radius: 50px;"> </div>
+        &nbsp; &nbsp;
+        <span class="offset-lg-0 offset-md-0 offset-sm-1" style="color: white;font-family: 'Poppins', sans-serif; font-size: 1.5rem;"> User </span>
+    </div>
+</nav>

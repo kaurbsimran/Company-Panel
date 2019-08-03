@@ -1,0 +1,149 @@
+/* ******************************************************* */
+
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
+
+
+/* hamburger icon */
+
+.nav-icon-8 {
+    width: 30px;
+    height: 30px;
+    margin: 20px;
+    margin-top: 50px;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.nav-icon-8 span {
+    background-color: white;
+    position: absolute;
+    border-radius: 2px;
+    width: 100%;
+    height: 2px;
+    padding-top: 0.5% !important;
+}
+
+.nav-icon-8 span:nth-child(1) {
+    top: 0px;
+    left: 0px;
+}
+
+.nav-icon-8 span:nth-child(2) {
+    top: 10px;
+    left: 0px;
+}
+
+.nav-icon-8 span:nth-child(3) {
+    bottom: 8px;
+    left: 0px;
+}
+
+.nav-icon-8:not(.open) span:nth-child(1) {
+    transform: scaleX(.8);
+}
+
+.nav-icon-8:not(.open) span:nth-child(2) {
+    transform: scaleX(.5);
+}
+
+.nav-icon-8:not(.open) span:nth-child(3) {
+    transform: scaleX(.8);
+}
+
+
+/* .nav-icon-8.open span:nth-child(1){
+    top: 13px;
+  }
+  .nav-icon-8.open span:nth-child(2){
+    top:13px;
+  }
+  .nav-icon-8.open span:nth-child(3){
+    top: 13px;
+  } */
+
+
+/* Side Navbar */
+
+.sidenav {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    left: 0;
+    background-color: black;
+    /* Black*/
+    overflow: auto;
+    /* Disable horizontal scroll */
+    /* padding-top: 60px; Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+}
+
+
+/* The navigation menu links */
+
+.sidenav a {
+    margin-top: 15px;
+    padding: 0px 0px 10px 0px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+.sidenav a:hover {
+    color: white;
+}
+
+
+/* .sidenav a:hover{
+    
+    border-radius:30px;
+    background-color: #00c9b7;
+  }
+  .closebtn:hover{
+      background-color: white;
+  } */
+
+
+/* Position and style the close button (top right corner) */
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    font-size: 36px;
+    margin-left: 10px;
+}
+
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 15px;
+    }
+}
